@@ -106,7 +106,7 @@ async function validateEmail(email) {
   });
 }
 
-app.post("/validate", apiKeyAuth, async (req, res) => {
+app.post("/", apiKeyAuth, async (req, res) => {
   // 🪵 LOG: 确认进入了正确的路由处理器，并打印请求体
   console.log("➡️ [Route Handler] Entered /validate POST handler.");
   console.log("   Request Body:", req.body);
